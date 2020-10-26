@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["es2015"],
+    "target": "es5",
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "declaration": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "outDir": "./lib",
+    "sourceMap": true
+  },
+  "include": ["./src/**/*"]
+}

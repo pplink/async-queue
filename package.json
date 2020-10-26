@@ -1,0 +1,33 @@
+{
+  "name": "@pplink/async-queue",
+  "version": "0.0.0",
+  "description": "Light-weight helper to run asynchronous jobs in sequence",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepare": "rimraf ./lib && yarn build",
+    "build": "tsc",
+    "dev": "tsc -w",
+    "test": "jest"
+  },
+  "dependencies": {
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.3",
+    "prettier": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{ts,tsx,js}": [
+      "prettier --write"
+    ]
+  }
+}
